@@ -1,0 +1,115 @@
+/* basic styles */
+html {
+    font-size: 16px;
+}
+
+body {
+    font-size: 1rem;
+    line-height: 1.5;
+    display: none;
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+    width: 400px;
+}
+
+section figure {
+    display: inline-block;
+}
+
+.image {
+    text-align: center;
+    margin: 20px 0;
+}
+
+nav ul {
+    margin-left: 0;
+    display: flex;
+}
+
+nav li {
+    display: flex;
+    flex: 1 1 150px;
+    margin: 2px;
+}
+
+nav a {
+    flex: 1 1 auto !important;
+    text-decoration: none;
+    line-height: 30px;
+    text-align: center !important;
+}
+
+.hide, .hide2 {
+    display: none;
+}
+
+#container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 10px 28px 10px;
+    -webkit-box-shadow: 0 0 5px rgba(5, 5, 5, 0.5);
+    -moz-box-shadow: 0 0 5px rgba(5, 5, 5, 0.5);
+    box-shadow: 0 0 5px rgba(5, 5, 5, 0.5);
+}
+
+header img {
+    display: none;
+}
+
+@media screen and (min-width: 900px) {
+    .left {
+        float: left;
+        margin: 0 20px 8px 0;
+    }
+
+    .right {
+        float: right;
+        margin: 0 0 8px 20px;
+    }
+
+    .image figure {
+        padding: 8px 8px 15px 8px;
+    }
+
+    h2, h3 {
+        clear: both;
+    }
+
+    h3 {
+        margin-bottom: 20px;
+    }
+
+    nav li {
+        flex: 1 1 auto;
+    }
+
+    .hide {
+        display: flex;
+    }
+
+    .divide {
+        flex-shrink: 8;
+    }
+
+    article > section {
+        overflow: auto;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #container {
+        max-width: 1200px;
+    }
+
+    li.hide2 {
+        display: flex;
+    }
+
+    section.hide2 {
+        display: block;
+    }
+}

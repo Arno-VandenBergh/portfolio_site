@@ -1,0 +1,251 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Poppins:wght@300&display=swap');
+
+body {
+    background-image: url(../images/background-pattern.png);
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    padding-bottom: 30px;
+    padding-top: 15px;
+    text-align: center;
+    font-size: 2.2rem;
+}
+
+.container {
+    background-color: #fff;
+    -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1, h2, h3 {
+    color: #ea5c1b;
+    font-family: 'Oswald', sans-serif;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+footer a {
+    color: #ea5c1b;
+}
+
+footer a:hover {
+    color: #ea5c1b;
+    text-decoration: underline;
+}
+
+ul a {
+    display: block;
+    text-align: center;
+    background-color: #ea5c1b;
+    color: #FFFFFF;
+    height: 100%;
+    line-height: 45px;
+    -webkit-border-radius: 22.5px;
+    -moz-border-radius: 22.5px;
+    border-radius: 22.5px;
+    border: 1px solid white;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #000;
+
+}
+
+article figure {
+    display: inline-block;
+    text-align: right;
+    font-weight: bold;
+    color: #ea5c1b;
+    position: relative;
+}
+
+figcaption {
+    width: 100%;
+    margin-top: 10px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-right: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+footer {
+    background-image: none;
+    background-color: rgba(234, 92, 27, 0.52);
+    margin: 0 -15px;
+}
+
+.color {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.accent {
+    font-weight: bold;
+}
+
+svg {
+    width: 300px;
+    height: 90px;
+}
+
+li.col-md-3 {
+    text-align: center;
+}
+
+th {
+    width: 100px;
+}
+
+.container > nav {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container > nav a {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: #ea5c1b;
+    border-radius: 50%;
+    line-height: 100px;
+    color: #FFFFFF;
+    transition: 1s;
+}
+
+.container > nav a:hover {
+    color: #000;
+    height: 50px;
+    width: 150px;
+    border-radius: 0;
+    background-color: rgba(234, 92, 27, 0.52);
+    line-height: 50px;
+}
+
+.container > nav p {
+    text-align: center;
+}
+
+.col-5 {
+    border-right: none;
+}
+
+.division {
+    border-right: none;
+}
+
+table.styled td, table.styled th {
+    border-left: 1px solid #000;
+    padding-left: 10px;
+}
+
+table.styled th:first-child {
+    border-left: none;
+}
+
+table.styled tr:first-child {
+    text-align: center;
+    border-bottom: 1px solid #000;
+}
+
+table.styled tr:first-child th {
+    padding-left: 0;
+}
+
+table.styled tr:last-child td {
+    text-align: center;
+    border-top: 1px solid #000;
+}
+
+caption {
+    caption-side: top;
+}
+
+@media screen and (min-width: 992px) {
+    .col-5 {
+        border-right: 1px solid #000;
+    }
+
+    .division {
+        border-right: 1px solid #000;
+    }
+
+    figcaption {
+        width: 250px;
+        height: 50px;
+        line-height: 50px;
+        background-color: #2d261d;
+        color: #FFFFFF;
+        text-align: center;
+        transform: rotateZ(-7deg);
+    }
+
+    .rgb + figcaption {
+        background-color: #fff;
+        color: #2d261d;
+        border: 1px solid #2d261d;
+    }
+    
+    p > img {
+        transform: rotate(-5deg);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    svg {
+        width: 210px;
+        height: 45px;
+    }
+
+    footer {
+        background-image: url(../images/dobbelsteen.jpg);
+        background-position: center center;
+    }
+
+    svg:hover {
+        width: 210px;
+    }
+
+    .c1, .c2, .c3, .c4 {
+        transition: 1s;
+    }
+
+    svg:hover .c1 {
+        transform: translateX(-60px);
+    }
+
+    svg:hover .c2 {
+        transform: translateX(-20px);
+    }
+
+    svg:hover .c3 {
+        transform: translateX(20px);
+    }
+
+    svg:hover .c4 {
+        transform: translateX(60px);
+    }
+}
+
+.rgb {
+    animation: kleur 10s infinite;
+}
+
+@keyframes kleur {
+    to {
+        filter: hue-rotate(0.99turn);
+    }
+}
+

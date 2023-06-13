@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Harten Jagen</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/materialize.1.0.0.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <style>
+        html {
+            height: 100%;
+        }
+
+        body {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container {
+            flex-grow: 1
+        }
+
+        .nav-wrapper img {
+            height: 46px;
+            width: auto;
+            background-color: #fff;
+            object-fit: fill;
+        }
+
+        .img-wrapper {
+            padding: 5px;
+            background-color: #fff;
+            display: inline-block;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+            overflow: hidden;
+            line-height: 0;
+            margin-top: 4px;
+            margin-left: 4px;
+        }
+
+        footer span {
+            font-weight: bold;
+        }
+
+        .col > img {
+            width: 200px;
+            height: auto;
+            -webkit-box-shadow: 2px 2px 6px rgba(50,50,50,70);
+            -moz-box-shadow: 2px 2px 6px rgba(50,50,50,70);
+            box-shadow: 2px 2px 6px rgba(50,50,50,70);
+            margin: 10px;
+        }
+
+        .flex {
+            display: flex;
+            justify-content: center;
+        }
+
+        .btn-floating {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+
+        footer p{
+            margin-left: 20px;
+        }
+
+    </style>
+</head>
+<body>
+<nav>
+    <div class="nav-wrapper red">
+        <div class="img-wrapper hide-on-small-and-down"><img src="images/icon.png" alt=""></div>
+        <a href="#!" class="brand-logo center">Harten Jagen</a>
+        <ul class="right">
+            <li>&nbsp;</li>
+        </ul>
+    </div>
+</nav>
+
+
+<div class="container">
+    <a class="btn-floating btn-large waves-effect waves-light red" href="harten_jagen.apk"><i class="material-icons">download</i></a>
+    <h4>Beschrijving</h4>
+    <p>In deze app kan je een simpel spelletje harten jagen spelen. Daarbij is het mogelijk om vanuit de app je vrienden uit te nodigen.</p>
+    <p>Hebben je vrienden de app nog niet? Geen probleem, stuur hen vanuit de app de download link door en vlieg er meteen in met hen!</p>
+    <p>Ben je competitief aangelegd? Je kunt jouw vooruitgang volgen in de spelgeschiedenis. Elk spelletje dat je speelt wordt daar bijgehouden.</p>
+    <h4>Screenshots</h4>
+
+    <div class="row">
+        <div class="col s12 m6 l4 xl3 flex"><img src="images/icon.png"></div>
+        <div class="col s12 m6 l4 xl3 flex"><img src="images/applicatie/HJ1.jpg"></div>
+        <div class="col s12 m6 l4 xl3 flex"><img src="images/applicatie/HJ2.jpg"></div>
+        <div class="col s12 m6 l4 xl3 flex"><img src="images/applicatie/HJ3.jpg"></div>
+        <div class="col s12 m6 l4 xl3 flex"><img src="images/applicatie/HJ4.jpg"></div>
+        <div class="col s12 m6 l4 xl3 flex"><img src="images/applicatie/HJ5.jpg"></div>
+        <div class="col s12 m6 l4 xl3 flex"><img src="images/applicatie/HJ6.jpg"></div>
+        <div class="col s12 m6 l4 xl3 flex"><img src="images/applicatie/HJ7.jpg"></div>
+        <div class="col s12 m6 l4 xl3 flex"><img src="images/applicatie/HJ8.jpg"></div>
+        <div class="col s12 m6 l4 xl3 flex"><img src="images/applicatie/HJ9.jpg"></div>
+    </div>
+
+</div>
+<footer class="page-footer no-padding">
+    <div class="footer-copyright red">
+        <p>© 2021 - gemaakt door <span>Arno Van den Bergh</span></p>
+    </div>
+</footer>
+<script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"></script>
+<script src="js/materialize.1.0.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.carousel').carousel({fullWidth: true});
+    });
+</script>
+</body>
+</html>
