@@ -1532,7 +1532,7 @@ footer .credits a {
 }
 
 .home {
-  background-image: url(/assets/img/IconSmall.jpg);
+  background-image: url(/portfolio_site/assets/img/IconSmall.jpg);
   background-position: 64% 0%;
 }
 
@@ -1547,7 +1547,7 @@ footer .credits a {
 
 @media only screen and (min-width: 1000px) {
   .home {
-    background-image: url(/assets/img/Icon.jpg);
+    background-image: url(/portfolio_site/assets/img/Icon.jpg);
     background-position: 84% 0%;
   }
 }
